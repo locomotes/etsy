@@ -2548,12 +2548,7 @@
  // var results = etsyitems.map(function(a) {
  //     return a.title;
  // });
- var pics, title, price, currency;
-
  etsyitems.results.forEach(function(a) {
-     pics = '<div class="pics">' + '<img src="' + a.Images[0].url_570xN + '" style="width: 250px; height: 200px;"/></div>';
-     title = '<div class="title">' + a.title + '</div>';
-     currency = '<div class="currency">' + a.currency_code + '</div>';
-     price = '<div class="price">' + '$' + a.price + '</div>';
-     $('.results').append('<div class="box">' + pics + title + currency + price  + '</div>');
+     $('.results').append('<div class="box"><img src="' + a.Images[0].url_170x135 + '">' + 'div class = "title"'
+         a.title '</div>' + '$' + a.price + a.currency_code + '</div>');
  });
